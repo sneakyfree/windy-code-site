@@ -24,15 +24,32 @@ export default function BootcampCTA() {
               <br />
               <span className="gradient-text">That's the Point.</span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-4">
-              Open Windy Code. Sign in. Your AI agent just hatched. It has chat, email, and can code for you.
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8">
+              Open Windy Code. Sign in. A guided welcome flow walks you through everything — and your AI agent hatches automatically. It has chat, email, and can code for you.
             </p>
-            <p className="text-xl text-white font-semibold mb-8">
-              Let's build your first app.
-            </p>
+
+            {/* 5-step bootcamp flow — mirrors the actual onboarding in the codebase */}
+            <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 max-w-3xl mx-auto mb-10">
+              {[
+                { step: "1", label: "Open Windy Code", icon: "💻" },
+                { step: "2", label: "Sign in free", icon: "🔑" },
+                { step: "3", label: "Agent hatches", icon: "🦋" },
+                { step: "4", label: "Speak your idea", icon: "🎤" },
+                { step: "5", label: "App is live", icon: "🚀" },
+              ].map((item, i) => (
+                <div key={i} className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 rounded-xl bg-windy-violet/10 border border-windy-violet/20 flex items-center justify-center text-xl mb-2">
+                    {item.icon}
+                  </div>
+                  <div className="text-[10px] text-windy-violet/60 font-bold uppercase tracking-wider">Step {item.step}</div>
+                  <div className="text-xs text-gray-400 mt-0.5">{item.label}</div>
+                </div>
+              ))}
+            </div>
+
             <p className="text-gray-400 max-w-xl mx-auto leading-relaxed mb-10">
               Speak your ideas out loud. Your AI writes the code. Ask questions in plain English.
-              Your agent deploys it when you're ready. Coding has never been this human.
+              Your agent deploys it when you're ready. Windy Code's built-in bootcamp mode guides you every step of the way.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -48,7 +65,8 @@ export default function BootcampCTA() {
 
             <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
               <span>✓ No coding experience needed</span>
-              <span>✓ Voice commands built in</span>
+              <span>✓ Built-in guided onboarding</span>
+              <span>✓ Voice commands from the start</span>
               <span>✓ AI agent does the heavy lifting</span>
             </div>
           </div>

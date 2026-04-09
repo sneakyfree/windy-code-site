@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import EditorPreview from './components/EditorPreview'
+import BuiltToLast from './components/BuiltToLast'
 import Pricing from './components/Pricing'
 import BootcampCTA from './components/BootcampCTA'
 import Ecosystem from './components/Ecosystem'
@@ -19,6 +20,7 @@ function App() {
       <Features />
       <HowItWorks />
       <EditorPreview />
+      <BuiltToLast />
       <Pricing />
       <BootcampCTA />
       <Ecosystem />

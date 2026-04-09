@@ -5,32 +5,32 @@ const features = [
   {
     icon: "🤖",
     title: "AI Coding Built In",
-    description: "Inline completions, Quick Edit, and a full AI agent panel. Powered by your Windy Fly agent or 10+ AI providers — including free options."
+    description: "Inline completions, Quick Edit, and a full AI agent panel. Choose from Gemini, Groq, DeepSeek, Mistral, Claude, GPT-4o, OpenRouter, Together, Grok, Ollama — or bring your own. Switch providers in one click."
   },
   {
     icon: "💬",
     title: "Chat Without Leaving",
-    description: "Windy Chat lives in your sidebar. Message your team, your AI agent, or anyone — encrypted and translated in real time. No window switching."
+    description: "Windy Chat lives in the Windy Sidebar — one tab away from your code. Message your team, your AI agent, or anyone — encrypted and translated in real time. No window switching, ever."
   },
   {
     icon: "📧",
     title: "Email Without Leaving",
-    description: "Windy Mail in the sidebar. Read, compose, and manage email right where you code. Your AI agent can handle email on your behalf."
+    description: "Windy Mail is another tab in the same sidebar. Read, compose, and manage email right where you code. Your AI agent gets its own inbox on day one and handles correspondence on your behalf."
   },
   {
     icon: "🎤",
     title: "Voice Mode",
-    description: "Press a shortcut and speak. Dictate code, give voice commands to your AI, or send voice messages. Stop typing through a straw."
+    description: "Press a shortcut and speak. Dictate code, give voice commands to your AI, or send voice messages to Chat. Stop typing through a straw — your voice is the fastest input you have."
   },
   {
     icon: "🌍",
     title: "199 Languages",
-    description: "Translate comments, docs, and error messages instantly. Work with international teams without language barriers."
+    description: "Translate comments, docs, and error messages instantly via 3,500+ specialized translation models. Work with international teams without language barriers — in the editor, in Chat, everywhere."
   },
   {
     icon: "🦋",
-    title: "Agent-First Design",
-    description: "Every action you can take, your Windy Fly agent can take. Give it instructions from your phone and it operates the editor for you."
+    title: "Agent-First Architecture",
+    description: "Every button you click has a matching command your Windy Fly agent can call programmatically — open files, write code, run terminals, send messages, compose emails. Give it instructions from your phone and come back to a pull request."
   }
 ];
 
@@ -52,7 +52,7 @@ export default function Features() {
             Everything You Need. <span className="gradient-text">One Window.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Other editors give you code. Windy Code gives you code, communication, AI, voice, translation, and your personal agent — all under one roof.
+            Other editors bolt on AI as a plugin. Windy Code has AI, Chat, Mail, Voice, Translation, and a personal AI agent built into the core — all accessible from one unified sidebar with five tabs.
           </p>
         </motion.div>
 

@@ -4,31 +4,35 @@ import { useRef, useState } from 'react';
 const faqs = [
   {
     question: "Is Windy Code free?",
-    answer: "Yes. The full editor, AI coding via free-tier providers (Gemini, Groq, DeepSeek), Chat sidebar, Mail sidebar, voice-to-code, and 199-language translation are all free. No credit card, no trial timer. Upgrade to Pro only if you want premium AI models like Claude and GPT-4o."
+    answer: "Yes. The full editor, AI coding via free-tier providers (Gemini, Groq, DeepSeek), the Windy Sidebar with Chat, Mail, Voice, and Cloud tabs, voice-to-code, and 199-language translation are all free. No credit card, no trial timer. Upgrade to Pro only when you want premium AI models like Claude and GPT-4o."
   },
   {
     question: "What AI models does it support?",
-    answer: "Windy Code supports 10+ AI providers out of the box. Free tier includes Gemini, Groq, and DeepSeek. Pro unlocks Claude, GPT-4o, and other premium models. You can switch providers at any time — no vendor lock-in."
+    answer: "Windy Code has a built-in provider registry supporting Gemini, Groq, DeepSeek, Mistral, OpenAI (GPT-4o), Anthropic (Claude), OpenRouter, Together, Grok, Ollama, and custom endpoints. Free tier auto-configures Gemini with zero API keys. You can switch providers with one click in settings — no vendor lock-in, ever."
   },
   {
     question: "Can I use it without signing up for anything?",
-    answer: "The editor works as a standalone code editor without any account. But signing in with a free Windy account unlocks Chat, Mail, AI features, voice mode, and Cloud Sync — and your AI agent hatches automatically."
+    answer: "Absolutely. The editor works as a full standalone code editor with no account required. When services aren't connected, the Windy Sidebar shows a friendly \"Connect to Windy\" prompt instead of breaking. Signing in with a free Windy account unlocks Chat, Mail, AI, Voice, and Cloud Sync — and your AI agent hatches automatically."
   },
   {
     question: "How is this different from other code editors?",
-    answer: "Other editors bolt on AI as a plugin. Windy Code has AI, Chat, Mail, Voice, Translation, and a personal AI agent built into the core. One window replaces your editor, messaging app, email client, and AI chat tool. No other editor has an integrated ecosystem."
+    answer: "Other editors bolt on AI as a plugin. Windy Code has AI, Chat, Mail, Voice, Translation, and a personal AI agent built into the core — accessible from one unified sidebar with five tabs. One window replaces your editor, messaging app, email client, and AI chat tool. Plus, Windy Code syncs with the latest upstream improvements every month, so you never fall behind on language support or security patches."
   },
   {
     question: "Can my AI agent really operate the editor?",
-    answer: "Yes. Every action you can take in Windy Code — opening files, writing code, running terminal commands, sending chat messages, composing emails — your Windy Fly agent can do programmatically. You can give it instructions from your phone via Windy Chat and it operates the IDE for you."
+    answer: "Yes. Windy Code has a production-ready Agent Bus with commands spanning 12 namespaces — editor, terminal, git, AI, chat, mail, voice, cloud, and more. Every button you click has a matching command your Windy Fly agent can call programmatically. Agents authenticate with verified Eternitas passports — no CAPTCHAs, just cryptographic trust. Give it instructions from your phone via Windy Chat and come back to a pull request."
   },
   {
     question: "Does it work on Mac, Windows, and Linux?",
-    answer: "Yes. Windy Code is a full desktop application available for macOS, Windows, and Linux. Your settings, keybindings, and workspaces sync across all your devices via Windy Cloud."
+    answer: "Yes. Windy Code is a full desktop application available for macOS, Windows, and Linux. Your settings, keybindings, extensions, and workspaces sync across all your devices via Windy Cloud."
   },
   {
     question: "What about extensions?",
-    answer: "Windy Code supports thousands of extensions through the Open VSX marketplace. Your favorite themes, language support, and tools are available. The Windy ecosystem features (Chat, Mail, Fly, Voice) are built in — they're not extensions, they're core."
+    answer: "Windy Code supports thousands of extensions through the Open VSX marketplace (Eclipse Foundation). Your favorite themes, language support, and developer tools are available. The Windy ecosystem features — Chat, Mail, Fly, Voice, Cloud — are built into the core, not extensions. They're first-class citizens, not afterthoughts."
+  },
+  {
+    question: "Will Windy Code fall behind on updates?",
+    answer: "No. Windy Code is architecturally designed for longevity. All ecosystem code lives in isolated directories, and only 8 core files were modified — every change documented and reversible. The codebase merges the latest upstream improvements monthly. You get the newest language support, security patches, and performance upgrades automatically."
   }
 ];
 

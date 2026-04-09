@@ -83,9 +83,9 @@ export default function Hero() {
             className="flex flex-wrap justify-center gap-8 md:gap-12 text-center"
           >
             {[
-              { value: "10+", label: "AI Providers" },
-              { value: "199", label: "Languages" },
-              { value: "Free", label: "To Start" },
+              { value: "10+", label: "AI Providers Built In" },
+              { value: "3,500+", label: "Translation Models" },
+              { value: "5", label: "Sidebar Panels" },
               { value: "3", label: "Platforms" },
             ].map((stat, i) => (
               <div key={i} className="min-w-[100px]">
